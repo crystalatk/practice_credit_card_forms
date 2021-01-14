@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Payment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="wrapper">
+        <section class="header">
+            <h1 class="is-large">Credit Card Form</h1>
+            <p>Every Field is Required.</p>
+        </section>
+        <section class="main-border">
+            <form action="#" method="POST">
+                <fieldset class="border">
+                    <legend>Personal Information</legend>
+                <!-- Name -->
+                <div class="field">
+                    <label class="label" for="inputName">Name</label>
+                    <div class="control">
+                    <input id="inputName" class="input" type="text" placeholder="Please enter your name" required>
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="field">
+                    <label class="label" for="inputEmail">Email</label>
+                    <div class="control">
+                    <input id="inputEmail" class="input is-normal" type="email" placeholder="Please enter a valid email" required>
+                    </div>
+                </div>
+                </fieldset>
+                <fieldset class="border">
+                    <legend>Credit Card Information</legend>
+                <!-- Credit Card Number -->
+                <div class="field">
+                    <label class="label" for="inputCCNumber">Credit Card Number</label>
+                    <div class="control">
+                    <input id="inputCCNumber" class="input is-normal" type="password" placeholder="Please enter credit card number" required>
+                    </div>
+                </div>
+                <!-- Horizontal Formatting of expDate and secCode -->
+                <div class="field is-horizontal expDateAndSecCode">
+                    <!-- Expiration Date -->
+                <div class="field-body">
+                    <label class="label" for="inputExpDate">Expiration Date</label>
+                    <div class="control">
+                    <div class="control">
+                        <input id="inputExpDate" class="input is-normal" type="password" placeholder="XX/XX" required>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Security Code -->
+                    <div class="field-body">
+                        <label class="label item" for="inputSecCode">Security Code</label>
+                        <div class="control">
+                        <div class="control">
+                            <input id="inputSecCode" class="input is-normal" type="password" placeholder="XXX" required>
+                            </div>
+                        </div>
+                    </div>
+                <!--  -->
+                    </div>
+                </fieldset>
+                <!-- Amount -->
+                <div class="field has-addons has-addons-left">
+                    <label class="label is-normal  item" for="inputAmount">Amount</label>
+                    <p class="control">
+                    <span class="select">
+                        <select>
+                        <option>$</option>
+                        <option>£</option>
+                        <option>€</option>
+                        </select>
+                    </span>
+                    </p>
+                    <p class="control">
+                    <input id="inputAmount" class="input" type="text" placeholder="$XX.XX" required>
+                    </p>
+                </div>
+                <!-- Submit Button -->
+                <div class="field is-grouped">
+                    <div class="control">
+                    <button class="button is-link is-normal">Submit</button>
+                    </div>
+                    <div class="control">
+                    <button class="button is-link is-light">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+<script src="js/scripts.js"></script>
+</html>
